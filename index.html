@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>MIS FATHUL MUNIR</title>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="container-topbar">
+            <div class="topbar-kiri">
+                <div class="box-email">
+                    <i class="fas fa-envelope icon-topbar"></i>
+                    <h4><a class="email" href="#">Misfathulmunir@gmail.com</a></h4>
+                </div>
+                <div class="megafon">
+                    <i class="fas fa-bullhorn icon-topbar"></i>
+                    <h4 class="ppdb">Pendaftaran TA 2022/2023 Telah Dibuka !</h4>
+                </div>
+            </div>
+            <div class="topbar-kanan">
+                <div class="medsos">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Top-Bar -->
+
+    <div class="navbar">
+        <div class="container-navbar">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/logo.png" alt="">
+                    <div class="brand">
+                        <h3 class="brand-titel">MIS FATHUL MUNIR</h3>
+                        <h5 class="brand-sub">Madrasah Hebat Bermartabat</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a class="item-menu" href="#"><i class="fas fa-home icon"></i>Beranda</a></li>
+                    <li class="dropdown" x-data="dropdown">
+                        <a class="item-menu" href="#" x-bind="toggle"><i class="fas fa-school icon"></i>Profil<i
+                                class="fas fa-caret-down down"></i></a>
+                        <ul class="dropdown-content" style="display: none;" x-bind="dialogue">
+                            <li class="sub-item"><a href="#"><i class="fas fa-landmark icon"></i>Sejarah</a></li>
+                            <li class="sub-item"><a href="#"><i class="fas fa-bullseye icon"></i>Visi & Misi</a></li>
+                            <li class="sub-item"><a href="#"><i class="fas fa-user-graduate icon"></i>Tenaga
+                                    Pendidik</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" x-data="dropdown">
+                        <a class="item-menu" href="#" x-bind="toggle"><i class="fas fa-laptop-code icon"></i>Aplikasi<i
+                                class="fas fa-caret-down down"></i></a>
+                        <ul class="dropdown-content" style="display: none;" x-bind="dialogue">
+                            <li class="sub-item"><a target="blank" href="http://elearning.misfathulmunir.sch.id/"><i
+                                        class="fas fa-chalkboard-teacher icon"></i>E-Learning</a></li>
+                            <li class="sub-item"><a target="blank" href="https://rdm.misfathulmunir.sch.id/"><i
+                                        class="fas fa-book"></i>Raport Digital</a></li>
+                            <li class="sub-item"><a href="#"><i class="fas fa-user-plus icon"></i>PPDB</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="item-menu" href="#"><i class="fas fa-phone-alt icon"></i>Kontak</a></li>
+                </ul>
+
+                <i class="far fa-times-circle menu-close" id="close"></i>
+                
+            </div>
+            <div class="menu-toggle" id="btn-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+    </div> <!-- Navbar -->
+
+    <div class="slider">
+        <div class="swiper mySwiper box-slider">
+            <div class="swiper-wrapper container-slider">
+                <div class="swiper-slide img-slider">
+                    <img src="./img/slide.jpg" alt="">
+                    <div class="kata-bijak">
+                        <h4>Nilai-Nilai</h4>
+                        <h2>Kerjasama</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide img-slider">
+                    <img src="./img/bc.jpg" alt="">
+                    <div class="kata-bijak">
+                        <h4>Nilai-Nilai</h4>
+                        <h2>Kerjasama</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next btn-next"></div>
+        <div class="swiper-button-prev btn-prev"></div>
+        <div class="pagination"></div>
+    </div> <!-- Slider -->
+
+    <section class="welcome">
+        <div class="container-welcome">
+            <div data-interval="100" class="selamat-datang">
+                <h2>Selamat Datang DI Mis Fathul Munir</h2>
+                <p>Mis Fathul Munir adalah International World School yang<br> menawarkan pendidikan standar dunia untuk
+                    anak-anak dari usia sekolah dasar</p>
+            </div>
+            <div class="sambutan-kepsek">
+                <img src="./img/kepsek.png" alt="">
+                <div data-interval="200" class="visi-misi">
+                    <div class="visi">
+                        <h3>VISI</h3>
+                        <p>“Terampil dalam proses,<br>unggul dalam prestasi,<br> berdasarkan Imtaq dan Iptek”</p>
+                    </div>
+                    <div class="misi">
+                        <h3>MISI</h3>
+                        <p>Menyelenggarakan pembelajaran yang inovatif,
+                            Menumbuh kembangkan keterampilan berfikir aktif, kreatif dan memecahkan masalah,
+                            Menumbuh kembangkan perilaku senang membaca, menulis dan menghafal Al-Qur’an
+                        </p>
+                        <a href="#">Lihat Detail <span><i class="fas fa-caret-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Welcome -->
+
+    <section class="late-news">
+        <div class="container-lateNews">
+            <div class="box-tittel">
+                <div class="tittel">
+                    <h4>Informasi Terbaru</h4>
+                    <h2>Berita & Kegiatan</h2>
+                </div>
+                <div class="all-news">
+                    <a href="#">
+                        <h5>Semua Berita & Kegiatan <span><i class="fas fa-caret-right"></i></span></h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box-beritaDankegiatan">
+                <div class="swiper mySwiper berita">
+                    <div class="swiper-wrapper container-slider">
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/bc.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/study1.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/study2.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/bc.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/bc.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/bc.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="img">
+                                <img class="img-card" src="./img/bc.jpg" alt="">
+                            </div>
+                            <div class="judul-berita">
+                                <h5>judul Berita</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next tombol-next"></div>
+                <div class="swiper-button-prev tombol-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section> <!-- Late-News -->
+
+    <section class="Tenaga-Pendidik">
+        <div class="tenagaPendidik-container">
+            <div class="titel-pendidik">
+                <h2>Tenaga Pendidik</h2>
+                <hr class="garis">
+            </div>
+            <div class="overflow-img">
+                <div class="swiper mySwiper container-pendidik">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide guru-card">
+                            <div class="img-guru">
+                                <img class="foto-guru" src="./img/guru1.jpg" alt="">
+                            </div>
+                            <div class="detail-guru">
+                                <h4>Nama Guru</h4>
+                                <h5>Mata Pelajaran</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide guru-card">
+                            <div class="img-guru">
+                                <img class="foto-guru" src="./img/guru2.jpg" alt="">
+                            </div>
+                            <div class="detail-guru">
+                                <h4>Nama Guru</h4>
+                                <h5>Mata Pelajaran</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide guru-card">
+                            <div class="img-guru">
+                                <img class="foto-guru" src="./img/guru4.jpg" alt="">
+                            </div>
+                            <div class="detail-guru">
+                                <h4>Nama Guru</h4>
+                                <h5>Mata Pelajaran</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide guru-card">
+                            <div class="img-guru">
+                                <img class="foto-guru" src="./img/guru3.jpg" alt="">
+                            </div>
+                            <div class="detail-guru">
+                                <h4>Nama Guru</h4>
+                                <h5>Mata Pelajaran</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide guru-card">
+                            <div class="img-guru">
+                                <img class="foto-guru" src="./img/guru5.jpg" alt="">
+                            </div>
+                            <div class="detail-guru">
+                                <h4>Nama Guru</h4>
+                                <h5>Mata Pelajaran</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination bulat-bulat"></div> -->
+                </div>
+            </div>
+            <div class="detail-pendidik">
+                <a href="#">
+                    <h4>Detail Tenaga Pendidik<span><i class="fas fa-caret-right"></i></span></h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-kiri">
+                <h3>Online Service</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher icon-kiri"></i>E-Learning</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i>Raport Digital</a></li>
+                    <li><a href="#"><i class="fas fa-user-plus icon-kiri"></i>PPDB</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-tengah">
+                <h3>Kontak Kami</h3>
+                <p>JL. Batu Angus, Kel. Dufa Dufa,<br>Kota Ternate</p>
+                <div class="kontak">
+                    <span><i class="fas fa-phone-alt icon-footer"></i>0852-XXXX-XXXX</span>
+                    <a href="#"><i class="fas fa-envelope icon-footer"></i>Misfathulmunir@gmail.com</a>
+                </div>
+                <div class="medsos-footer">
+                    <a href="#"><i class="fab fa-facebook medsos-icon"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square medsos-icon"></i></a>
+                    <a href="#"><i class="fab fa-youtube medsos-icon"></i></a>
+                </div>
+            </div>
+
+            <div class="maps">
+                <iframe class="peta"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.41077516234!2d127.38151001446887!3d0.8189410632799452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329cb19f3340637d%3A0xa3161d5cae58c72!2sMIS%20Fathul%20Munir%20Kota%20Ternate!5e0!3m2!1sid!2sid!4v1634813215575!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </footer>
+    <footer class="and">
+        <div class="copyright-author">
+            Copyright &copy; 2021 Misfathul Munir. All Rights Reserved - Made with <i class="fas fa-heart"></i> by Iphul
+            Lamaau
+        </div>
+    </footer>
+
+
+
+    <!-- Alpine.js -->
+    <script src="./main/alpine.js"></script>
+    <!-- My.js -->
+    <script src="./main/main.js"></script>
+    <!-- Swiper.js -->
+    <script src="./main/swiper-bundle.min.js"></script>
+    <script src="./main/swiper.js"></script>
+
+</body>
+
+</html>
